@@ -1,4 +1,5 @@
 # Пример простого Rails приложения с webpacker и Vue.js
+![Rails worked with vue](https://github.com/multpix/rails-wp-vue/raw/master/rails-wp-vue.png)
 Инициализация приложения
 ```bash
 rails new rails-wp-vue --webpack=vue
