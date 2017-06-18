@@ -9,11 +9,11 @@ rails new rails-wp-vue --webpack=vue
 
 Для удобства компонент перенесен в каталог `javascript/components`
 
-Имя точки входа изенено на `packs/vue.js`
+Имя точки входа изменено на `packs/vue.js`
 
-Для примера созданна главная страница `rails g controller front index`
+Для примера создана главная страница `rails g controller front index`
 
-В корневой шаблон `layouts/application.erb` добавленны вызовы:
+В корневой шаблон `layouts/application.erb` добавлены вызовы:
 ```erb
 <%= javascript_pack_tag 'vue' %>
 <%= stylesheet_pack_tag 'vue' %>
@@ -36,7 +36,7 @@ foreman start
 
 Теперь работающее приложение доступно по адресу `http://localhost:5000`
 
-При изменении и сохранении js происходит перезагрузка соответсвующей вкладки браузера
+При изменении и сохранении js происходит перезагрузка соответствующей вкладки браузера
 
 Для добавления js пакетов `./bin/yarn add stylus stylus-loader pug pug-loader`
 
