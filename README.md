@@ -88,3 +88,13 @@ p
 
 Дополнение для удобства разработки и отладки:
 [Vue.js devtools](https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
+
+Выгрузка на Heroku
+```
+heroku create rails-wp-vue
+heroku buildpacks:add --index 1 heroku/nodejs --app rails-wp-vue
+heroku buildpacks:add --index 2 heroku/ruby --app rails-wp-vue
+heroku addons:create heroku-postgresql:hobby-dev --app rails-wp-vue
+git add -A && git commit -m "deploy" && git push heroku master
+heroku open && heroku logs --tail
+```
